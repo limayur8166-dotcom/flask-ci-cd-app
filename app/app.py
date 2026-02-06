@@ -5,9 +5,10 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return jsonify({
-        "message": "Hello from AUTO DEPLOY CI/CD",
-        "status": "success"
-    })
+    "message": "Hello from AUTO DEPLOY CI/CD 🚀",
+    "status": "success"
+})
+
 
 @app.route("/health")
 def health():
