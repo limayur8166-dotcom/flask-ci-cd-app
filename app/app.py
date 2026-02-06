@@ -1,11 +1,12 @@
 from flask import Flask, jsonify
+from datetime import datetime
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
     return jsonify({
-        "message": "Hello from AUTO DEPLOY CI/CD 🚀",
+        "message": "AUTO DEPLOY WORKING AT " + datetime.now().isoformat(),
         "status": "success"
     })
 
